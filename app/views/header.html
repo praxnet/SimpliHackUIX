@@ -10,13 +10,14 @@
 
 				<a class="navbar-brand" href="#">Tandem</a>
 			</div>
-			<div id="navbar" class="collapse navbar-collapse">
+			<div id="navbar" class="collapse navbar-collapse" ng-init="$scope.tab=1">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Public profile</a>
+					<li ng-class="{'active':$scope.tab===1}" ng-click="$scope.tab=1"><a href="#public">Public profile</a>
 					</li>
-					<li class="active"><a href="#contact">Team page</a>
+					<li ng-class="{'active':$scope.tab===2}" ng-click="$scope.tab=2"><a href="#team">Team page</a>
 					</li>
-
+					<li ng-class="{'active':$scope.tab===3}" ng-click="$scope.tab=3"><a href="#course">Courses</a>
+					</li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
