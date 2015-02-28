@@ -1,6 +1,10 @@
 (function() {
 
     var memebers = [{
+        name: 'Me',
+        avatar: 'assets/img/avatar1.png'
+    },
+    {
         name: 'Aslam',
         avatar: 'assets/img/avatar1.png'
     }, {
@@ -14,10 +18,12 @@
     var app = angular.module('myapp', []);
 
 
-    app.controller('teamMember', ['$scope', function($scope) {
+    app.controller('discussion',function(){
+
+
+    	})
+    	.controller('teamMember', ['$scope', function($scope) {
             $scope.team = memebers;
-
-
 
         }]).directive('header', function() {
             return {
